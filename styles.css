@@ -1,0 +1,166 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #cbe7ff; /* Azul cielo */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #0091d1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+/* Sección de imagen grande */
+.large-image {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.large-image h2 {
+    margin-bottom: 20px;
+}
+
+.image-large {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+/* Mensaje de bienvenida */
+.welcome {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección sobre el hotel con recuadro blanco */
+.about-hotel {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.about-hotel h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #0091d1;
+}
+
+.about-hotel p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Galería de fotos */
+.gallery {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    width: 100%;
+    max-width: 300px;
+    margin: 10px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ubicación */
+.location {
+    padding: 20px;
+    text-align: center;
+}
+
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin: 20px 0;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Formulario de reservación */
+.reservation-form {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.reservation-form h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #0091d1;
+}
+
+.reservation-form .form-row {
+    margin-bottom: 15px;
+}
+
+.reservation-form input, .reservation-form select, .reservation-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.reservation-form button {
+    background-color: #0091d1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+.reservation-form button:hover {
+    background-color: #007bb5;
+}

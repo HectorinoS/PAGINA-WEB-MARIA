@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Almar - Reservaciones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Almar</h1>
+        <p>"Para disfrutar los momentos más felices"</p>
+    </header>
+
+    <!-- Imagen grande en horizontal del hotel -->
+    <section class="large-image">
+        <h2>Descubre el Hotel Almar</h2>
+        <img src="hotel-large.jpg" alt="Vista panorámica del Hotel Almar" class="image-large">
+    </section>
+
+    <!-- Mensaje de bienvenida -->
+    <section class="welcome">
+        <h2>Bienvenidos a Hotel Almar</h2>
+        <p>En el Hotel Almar, nos dedicamos a hacer de tu estancia una experiencia única. Relájate, disfruta de la playa, y crea recuerdos inolvidables con nosotros.</p>
+    </section>
+
+    <!-- Sobre el hotel con recuadro blanco -->
+    <section class="about-hotel">
+        <h2>Sobre el Hotel Almar</h2>
+        <p>El Hotel Almar fue creado con la misión de ofrecer un lugar donde nuestros huéspedes puedan relajarse y disfrutar de sus momentos más felices. Inspirado por la belleza del mar y la tranquilidad de la playa, nuestro hotel ofrece una experiencia única para quienes buscan escapar del estrés cotidiano.</p>
+    </section>
+
+    <!-- Galería de fotos del hotel -->
+    <section class="gallery">
+        <h2>Galería de Fotos</h2>
+        <div class="gallery-grid">
+            <img src="photo1.jpg" alt="Habitación del hotel">
+            <img src="photo2.jpg" alt="Vista del mar desde el hotel">
+            <img src="photo3.jpg" alt="Piscina del hotel">
+            <img src="photo4.jpg" alt="Restaurant del hotel">
+        </div>
+    </section>
+
+    <!-- Ubicación del hotel -->
+    <section class="location">
+        <h2>Ubicación</h2>
+        <p>Nos encontramos en la hermosa playa de <strong>Playa Azul</strong>, a solo 10 minutos del centro de la ciudad y 30 minutos del aeropuerto.</p>
+        
+        <!-- Mapa de Google Maps integrado -->
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.0670770908054!2d-122.084249484351!3d37.42199997982511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5b24a1c21b3%3A0x417db26bcbfa1d92!2sGoogleplex!5e0!3m2!1ses!2ses!4v1639453644530!5m2!1ses!2ses"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <p><strong>Dirección:</strong> Calle de la Playa, #123, Playa Azul, Estado de México, CP 56789</p>
+        <p><strong>Teléfono:</strong> +52 123 456 7890</p>
+        <p><strong>Correo electrónico:</strong> contacto@hotelalmar.com</p>
+    </section>
+
+    <!-- Proceso de Reservación (Formulario al final) -->
+    <section class="reservation-form">
+        <h2>Haz tu reservación</h2>
+        <form id="form-reservation" action="#" method="post" onsubmit="return validateForm();">
+            <!-- Selección de fecha y horario -->
+            <div class="form-row">
+                <label for="fecha">Fecha de entrada:</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-row">
+                <label for="horario">Hora de entrada:</label>
+                <input type="time" id="horario" name="horario" required>
+            </div>
+
+            <!-- Tipo de habitación -->
+            <div class="form-row">
+                <label for="habitacion">Tipo de habitación:</label>
+                <select id="habitacion" name="habitacion" required>
+                    <option value="basica">Básica - $50 por noche</option>
+                    <option value="premium">Premium - $100 por noche</option>
+                    <option value="vip">VIP - $150 por noche</option>
+                </select>
+            </div>
+
+            <!-- Complementos -->
+            <div class="form-row">
+                <label for="complementos">Complementos:</label>
+                <select id="complementos" name="complementos">
+                    <option value="desayuno">Desayuno en la habitación - $10</option>
+                    <option value="transporte">Servicio de transporte - $15</option>
+                    <option value="late-checkout">Late check-out - $20</option>
+                    <option value="spa">Acceso a spa - $30</option>
+                    <option value="wifi">Wi-Fi Premium - $5</option>
+                </select>
+            </div>
+
+            <!-- Botón para reservar -->
+            <button type="submit">Reservar ahora</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
